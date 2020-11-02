@@ -21,28 +21,109 @@
     <main>
       <section class="hero">
         <div class="hero__image-container">
+          <img class="hero__image" src="../assets/img/bartek.jpg" alt="Bartek's photo" />
           <span class="hero__hello">Hey there! 👋</span>
         </div>
         <div class="hero__description">
-          <h2 class="hero__header">
+          <h1 class="hero__header">
             My name is Bartosz and I’m an aspiring
-            <span class="hero__special">Frontend developer</span> and a keen football fan.
-          </h2>
+            <span class="hero__special">Frontend developer</span> and a keen
+            football fan.
+          </h1>
           <p class="hero__paragraph">
             You might be interested in checking the list of
-            <a href="#skills"> my skills</a>. Don’t forget to have a glimpse at
-            <a href="#projects">my projects</a>. Currently I’m looking for a new
-            challenges so if you have one - <a href="#contact">contact me 😊</a>
+            <a class="hero__link" href="#skills"> my skills</a>. Don’t forget to
+            have a glimpse at
+            <a class="hero__link" href="#projects">my projects</a>. Currently I’m
+            looking for a new challenges so if you have one -
+            <a class="hero__link" href="#contact">contact me</a> 😊
           </p>
+          <a class="hero__contact" href="mailto:bartoszmalecki90@gmail.com"
+            >Mail to me!</a
+          >
         </div>
-        <a class="hero__contact" href="mailto:bartoszmalecki90@gmail.com"
-          >bartoszmalecki90@gmail.com</a
-        >
       </section>
       <section class="skills" id="skills">
-        <h1 class="skills__header">My skills</h1>
-        <div class="skills-secrion">
-          
+        <h2 class="skills__header">My skills</h2>
+        <article class="skills-section">
+          <span class="skills-section__emoji">💪</span>
+          <h3 class="skills-section__header">Working knowlege</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item">Semantic HTML5</li>
+            <li class="skills-list__item">CSS3</li>
+            <li class="skills-list__item">SASS</li>
+            <li class="skills-list__item">JS: Local storage</li>
+            <li class="skills-list__item">JS: DOM manipulations</li>
+            <li class="skills-list__item">Markdown</li>
+            <li class="skills-list__item">Figma</li>
+            <li class="skills-list__item">Forms</li>
+          </ul>
+        </article>
+        <article class="skills-section">
+          <span class="skills-section__emoji">🤔</span>
+          <h3 class="skills-section__header">Know something about</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item">JavaScript ES6 + features</li>
+            <li class="skills-list__item">CSS animations</li>
+            <li class="skills-list__item">Working with API</li>
+            <li class="skills-list__item">NPM Scripts</li>
+            <li class="skills-list__item">PWA</li>
+            <li class="skills-list__item">Git</li>
+            <li class="skills-list__item">Accessibility</li>
+          </ul>
+        </article>
+        <article class="skills-section">
+          <span class="skills-section__emoji">🎓</span>
+          <h3 class="skills-section__header">Want to learn</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item">React JS</li>
+            <li class="skills-list__item">Any CSS framework</li>
+            <li class="skills-list__item">GraphQL</li>
+            <li class="skills-list__item">JQuery</li>
+            <li class="skills-list__item">Node</li>
+          </ul>
+        </article>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects__header">Recent projects</h2>
+        <p class="projects__description">
+          I started my frontend developer path in 2020. Here are some of my
+          projects I did in my free time.
+        </p>
+        <article class="projects-list">
+          <div class="projects-list__grid">
+            <span class="projects-list__item"></span>
+          </div>
+        </article>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__header">Contact me</h2>
+        <p class="contact__description">
+          I’m open for new opportunities. If you have one for me we should talk!
+        </p>
+        <div class="contact-links">
+          <ul class="socials">
+            <li class="socials-item">
+              <a
+                class="socials__link"
+                href="https://github.com/bartosz-malecki"
+              >
+                <img class="socials__icon" alt="Bartek's Github page" />
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials__link"
+                href="https://www.facebook.com/bartosz.malecki.maly"
+              >
+                <img class="socials__icon" alt="Bartek's facebook page" />
+              </a>
+            </li>
+          </ul>
+
+          <a class="hero__contact" href="mailto:bartoszmalecki90@gmail.com"
+            >bartoszmalecki90@gmail.com</a
+          >
         </div>
       </section>
     </main>
