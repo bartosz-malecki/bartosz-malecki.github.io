@@ -1,34 +1,68 @@
 .skills {
   background: #1070ca;
-}
-
-.skills__header {
+  color: $white;
+  padding: 64px 16px 72px;
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
     text-align: center;
-    padding: 60px 0;
-font-weight: bold;
-font-size: 48px;
-line-height: 56px;
+    margin: 0;
+  }
 }
 
 .skills-section {
-}
-
-.skills-section__header {
-font-weight: bold;
-font-size: 24px;
-line-height: 44px;
-}
-
-.skills-section__emoji {
+  margin-top: 64px;
+  &__emoji {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    display: block;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 24px;
+  }
 }
 
 .skills-list {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #DBEAF7;
-}
+  color: $darkLight;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 288px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  &__item {
+    padding: 0 0 0 24px;
+    margin: 0 0 16px;
+    position: relative;
+    &:before {
+      width: 12px;
+      height: 9px;
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 7px;
+      display: block;
 
-.skills-list__item {
-    
+      background: url("../assets/img/small-tick.svg");
+      .skills-list--blue & {
+        background: url("../assets/img/small-tick_green.svg");
+      }
+      .skills-list--dot & {
+        background: $darkLight;
+        width: 2px;
+        height: 2px;
+        left: 5px;
+        top: 11px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
