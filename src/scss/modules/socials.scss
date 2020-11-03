@@ -1,0 +1,21 @@
+.socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 56px 64px;
+    &__link {
+      background: $white;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    }
+    &__item {
+        margin: 0 12px;
+    }
+    
+  }

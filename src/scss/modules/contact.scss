@@ -1,4 +1,30 @@
 .contact {
-    background: #DBEAF7;
+  background: $darkLight;
+  padding: 64px 16px 88px;
+  text-align: center;
+  &__header {
     text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 0 32px;
+  }
+  &__description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &__mail {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    background: $blue;
+    color: $white;
+    border-radius: 64px;
+    padding: 4px 24px;
+    text-decoration: none;
+  }
 }
+
+
