@@ -17,4 +17,64 @@
 }
 
 .project {
+  font-family: Roboto Mono;
+  font-size: 13px;
+  line-height: 24px;
+  background: $greyConsole;
+  color: $console;
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+  &__circle {
+    position: relative;
+    left: 12px;
+    margin: 0 4px;
+    background: $lightGrey;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  &__content {
+
+  }
+  &__description {
+    color: $lightConsole;
+  }
+  &__header {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+
+  }
+  &__label {
+    position: relative;
+    top: 24px;
+    left: 16px;
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 4px;
+  }
+  &__link {
+    font-size: 13px;
+    line-height: 24px;
+    color: $link;
+  }
+  &__title {
+    color: $white;
+  }
+
+  &__window {
+    height: 40px;
+    background: $darkGrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+  }
+  &__ghLogo {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    left: 16px;
+    top: 24px;
+  }
 }
