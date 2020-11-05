@@ -1,5 +1,10 @@
 .hero {
   padding: 74px 16px 0;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   &__mail {
     font-weight: bold;
     font-size: 20px;
@@ -11,8 +16,8 @@
     text-decoration: none;
   }
   &__description {
-      text-align: center;
-      margin-bottom: 88px;
+    text-align: center;
+    margin-bottom: 88px;
   }
   &__header {
     font-weight: bold;
@@ -27,6 +32,10 @@
     height: 96px;
     border: 16px solid #f6f9fd;
     border-radius: 50%;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+    }
   }
   &__image-container {
     display: flex;
@@ -35,6 +44,15 @@
   }
   &__hello {
     display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      background: $darkBlue;
+      color: $white;
+      height: 40px;
+    }
   }
   &__link {
     color: $blue;
