@@ -2,6 +2,12 @@
   background: $darkBlue;
   color: $white;
   padding: 64px 16px 72px;
+  &__container {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
   &__header {
     font-weight: bold;
     font-size: 36px;
@@ -18,14 +24,14 @@
     line-height: 72px;
     text-align: center;
     display: block;
+    margin-bottom: 16px;
   }
   &__header {
     font-weight: bold;
     font-size: 24px;
     line-height: 44px;
     text-align: center;
-    margin: 0;
-    padding-bottom: 24px;
+    margin: 0 0 24px;
   }
 }
 
@@ -50,7 +56,6 @@
       left: 0;
       top: 7px;
       display: block;
-
       background: url("../assets/img/small-tick.svg");
       .skills-list--blue & {
         background: url("../assets/img/small-tick_green.svg");
