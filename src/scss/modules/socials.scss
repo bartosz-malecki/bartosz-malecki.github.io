@@ -17,4 +17,7 @@
     &__item {
         margin: 0 12px;
     }
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
   }
