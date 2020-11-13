@@ -1,7 +1,7 @@
 .projects {
   padding: 64px 16px 88px;
   @media (min-width: $desktop) {
-    padding: 74px 64px 88px;
+    padding: 80px 16px 176px;
   }
   &__description {
     font-weight: 300;
@@ -102,17 +102,17 @@
   &__ghLogo {
     height: 24px;
     width: 24px;
+    margin-bottom: 24px;
   }
 }
 
 .projects-grid {
   display: grid;
   gap: 24px;
+  max-width: 1184px;
+  margin: 0 auto;
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: 1440px) {
-    grid-template-columns: 580px 580px;
-    justify-content: center;
-  }
+  
 }

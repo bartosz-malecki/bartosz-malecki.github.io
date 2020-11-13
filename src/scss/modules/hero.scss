@@ -1,5 +1,5 @@
 .hero {
-  padding: 74px 16px 88px;
+  padding: 72px 16px 88px;
   @media (min-width: $tablet) {
     max-width: 768px;
     margin: 0 auto;
@@ -7,7 +7,7 @@
   @media (min-width: $desktop) {
     max-width: 830px;
     margin: 0 auto;
-    padding: 106px 0px 88px;
+    padding: 106px 0px 176px;
   }
   &__mail {
     display: inline-block;
@@ -19,31 +19,31 @@
     border-radius: 64px;
     padding: 4px 24px;
     text-decoration: none;
-    
   }
   &__description {
     text-align: center;
-    @media (min-width: $desktop) { 
-      position: relative;   
+    @media (min-width: $desktop) {
+      position: relative;
       max-width: 786px;
-      margin: 0 auto;    
-    &:before, &:after {
-      position: absolute;
-      display: block;
-      width: 83px;
-      height: 255px;
-      content: "";
-      top: 0;
+      margin: 0 auto;
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        width: 83px;
+        height: 255px;
+        content: "";
+        top: 0;
+      }
+      &:before {
+        background: url("../assets/img/leftBracket.svg");
+        right: 100%;
+      }
+      &:after {
+        left: 100%;
+        background: url("../assets/img/rightBracket.svg");
+      }
     }
-    &:before{
-      background: url("../assets/img/leftBracket.svg");
-      right: 100%;
-    }
-    &:after {
-      left: 100%;
-      background: url("../assets/img/rightBracket.svg");
-    }
-  }
   }
   &__header {
     font-weight: bold;
@@ -100,7 +100,7 @@
         content: "";
         width: 18px;
         height: 23px;
-        background: url("../assets/img/Speech_cloud.svg");        
+        background: url("../assets/img/Speech_cloud.svg");
       }
     }
   }

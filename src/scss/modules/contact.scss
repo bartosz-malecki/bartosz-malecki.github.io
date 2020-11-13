@@ -2,6 +2,9 @@
   background: $darkLight;
   padding: 64px 16px 88px;
   text-align: center;
+  @media (min-width: $desktop) {
+    padding: 80px 16px 176px;
+  }
   &__header {
     text-align: center;
     font-weight: bold;
@@ -27,7 +30,7 @@ line-height: 56px;
     text-align: center;
     @media (min-width: $desktop) {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       max-width: 580px;
       margin: 128px auto 0;
     }

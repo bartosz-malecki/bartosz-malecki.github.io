@@ -1,7 +1,10 @@
 .skills {
   background: $darkBlue;
   color: $white;
-  padding: 74px 16px 88px;
+  padding: 64px 16px 88px;
+  @media (min-width: $desktop) {
+    padding: 80px 16px 176px;
+  }
   &__container {
     @media (min-width: $desktop) {
       display: grid;
