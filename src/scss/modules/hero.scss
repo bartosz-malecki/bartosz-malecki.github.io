@@ -23,24 +23,24 @@
   }
   &__description {
     text-align: center;
-    @media (min-width: $desktop) {        
-    &:before {
+    @media (min-width: $desktop) { 
+      position: relative;   
+      max-width: 786px;
+      margin: 0 auto;    
+    &:before, &:after {
       position: absolute;
-      left: calc(50% - 768px/2 - 83px);
       display: block;
       width: 83px;
       height: 255px;
       content: "";
+      top: 0;
+    }
+    &:before{
       background: url("../assets/img/leftBracket.svg");
+      right: 100%;
     }
     &:after {
-      position: absolute;
-      top: 380px;
-      left: calc(50% + 768px/2);
-      display: block;
-      width: 83px;
-      height: 255px;
-      content: "";
+      left: 100%;
       background: url("../assets/img/rightBracket.svg");
     }
   }
@@ -51,7 +51,7 @@
     line-height: 32px;
     text-align: center;
     color: $textDark;
-    margin-top: 48px;
+    margin-top: 24px;
     @media (min-width: $desktop) {
       font-size: 32px;
       line-height: 40px;
@@ -122,5 +122,6 @@
   }
   &__special {
     color: #1070ca;
+    white-space: nowrap;
   }
 }
