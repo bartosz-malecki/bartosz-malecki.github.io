@@ -1,13 +1,13 @@
 import "../scss/main.scss";
 
-console.log("HELLO 🚀");
+console.log("HELLO, I'm Bartek - nice to meet you 🚀");
 
 const media = window.matchMedia("(min-width: 768px)");
 
 if (media.matches) {
   const mq = document.querySelector(".contact__mail");
   mq.innerHTML = `bartoszmalecki90@gmail.com`;
-} 
+}
 
 const repositoryList = document.querySelector(".projects-grid");
 
@@ -39,7 +39,9 @@ fetch("https://api.github.com/users/bartosz-malecki/repos")
           <p class="project__grid">
             <span class="project__label">demo:</span
             ><span
-              >&lt;<a href="${homepage}" title="${name}" class="project__link" target="_blank"
+              >&lt;<a href="${homepage}" title="${name}" class="project__link" 
+              target="_blank"
+              rel="noopener norefferer"
                 >see here</a
               >&gt;</span
             >
@@ -47,7 +49,9 @@ fetch("https://api.github.com/users/bartosz-malecki/repos")
           <p class="project__grid">
             <span class="project__label">github:</span
             ><span
-              >&lt;<a href="${html_url}" title="${name}" class="project__link" target="_blank"
+              >&lt;<a href="${html_url}" title="${name}" class="project__link" 
+              target="_blank"
+              rel="noopener norefferer"
                 >source code</a
               >&gt;</span
             >
