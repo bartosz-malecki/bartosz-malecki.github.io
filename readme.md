@@ -4,12 +4,11 @@
 
 My simple portfolio webside
 
-## TECHNOLOGIES
+## Technologies
 
 - WTF Webpack starterkit
 - HTML + CSS + JS
 - Github API
-- CSS Grid
 
 ## Available scripts
 
