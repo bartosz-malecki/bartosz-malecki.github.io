@@ -10,6 +10,10 @@ My simple portfolio webside
 - HTML + CSS + JS
 - Github API
 
+## WTF Webpack Starter Kit
+
+Toolkit for static websites development from WTF training course.
+
 ## Available scripts
 
 `npm run start` - runs development mode
