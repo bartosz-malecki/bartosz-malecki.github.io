@@ -58,7 +58,9 @@ fetch("https://api.github.com/users/bartosz-malecki/repos")
           </p>
         </div>
       </article>`;
-      repositoryList.innerHTML += myTemplate;
+      if (description) {
+        repositoryList.innerHTML += myTemplate;
+      }
     }
   })
   .catch((error) => {
